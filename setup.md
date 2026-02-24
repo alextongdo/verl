@@ -21,7 +21,7 @@ docker save -o verl_docker_backup.tar verlai/verl:vllm012.latest
 ```
 5. To load (for future sessions)
 ```sh
-docker load -i verl_docker_backup.tar
+docker load -i ../verl_docker_backup.tar
 ```
 # Running
 1. To run verl, do the following commands from the verl repo path
