@@ -53,11 +53,10 @@ for MODEL in "${MODELS[@]}"; do
                 trainer.n_gpus_per_node=1 \
                 trainer.nnodes=1 \
                 trainer.save_freq=10 \
-                trainer.test_freq=10 \
-                trainer.total_epochs=1 \
-                trainer.total_training_steps=10
+                trainer.test_freq=5 \
+                trainer.total_epochs=1 
 
-                hf upload randomath/rl_ppo_profiles /tmp/ray/session_latest/logs/ ./$RUN_NAME --repo-type=dataset
+                scp -r /tmp/ray/session_latest/logs/ s_01kh2r8bd5pg7955q6xc6y1s6b@ssh.lightning.ai:/teamspace/studios/this_studio/$RUN_NAME
         done
     done
 done
