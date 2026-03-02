@@ -27,5 +27,5 @@ docker load -i ../verl_docker_backup.tar
 1. To run verl, do the following commands from the verl repo path
 ```bash
 python3 examples/data_preprocess/gsm8k.py --local_save_dir ~/data/gsm8k
-bash main.bash
+bash main.sh
 ```
