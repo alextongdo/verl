@@ -33,7 +33,7 @@ fi
 
 train_files=$DATA_ROOT/data/math_expression_tool/train.parquet
 test_files=$DATA_ROOT/data/math_expression_tool/test.parquet
-agent_loop_config_path=recipe/custom_langgraph_agent/example/agent.yaml
+agent_loop_config_path=custom_langgraph_agent/example/agent.yaml
 
 project_name=math_expression_tool
 experiment_name=qwen2.5-3b-light-v2-ppo
